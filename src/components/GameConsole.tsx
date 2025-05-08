@@ -406,7 +406,7 @@ const GameConsole: React.FC = () => {
           ⏻
         </PowerButton>
         <ConsoleHeader>
-          For My Favorite Person <HeartIcon>❤️</HeartIcon>
+          My Lovely Hazel <HeartIcon>❤️</HeartIcon>
         </ConsoleHeader>
         <SoundButton onClick={handleSoundButton}>
           {isSoundOn ? '🔊' : '🔇'}
