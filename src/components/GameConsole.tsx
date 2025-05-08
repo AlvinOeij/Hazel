@@ -77,8 +77,8 @@ const ConsoleHeader = styled.div`
   box-shadow: 0 4px 15px rgba(255, 64, 129, 0.3);
   animation: ${shimmer} 5s linear infinite;
   position: relative;
-  flex: 1;
-  margin: 0 15px;
+  width: 100%;
+  margin-bottom: 10px;
 `;
 
 const HeartIcon = styled.span`
@@ -114,6 +114,14 @@ const ConsoleLights = styled.div`
   justify-content: center;
   gap: 10px;
   margin-bottom: 10px;
+`;
+
+const ConsoleTopBar = styled.div`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 15px;
 `;
 
 const Light = styled.div<{ color: string }>`
@@ -401,23 +409,23 @@ const GameConsole: React.FC = () => {
 
   return (
     <>
-      <TopControlsRow>
-        <PowerButton onClick={handlePowerButton}>
-          ⏻
-        </PowerButton>
-        <ConsoleHeader>
-          My Lovely Hazel <HeartIcon>❤️</HeartIcon>
-        </ConsoleHeader>
-        <SoundButton onClick={handleSoundButton}>
-          {isSoundOn ? '🔊' : '🔇'}
-        </SoundButton>
-      </TopControlsRow>
+      <ConsoleHeader>
+        My Lovely Hazel <HeartIcon>❤️</HeartIcon>
+      </ConsoleHeader>
       <ConsoleContainer>
-        <ConsoleLights>
-          <Light color="#FF5252" />
-          <Light color="#FFEB3B" />
-          <Light color="#4CAF50" />
-        </ConsoleLights>
+        <ConsoleTopBar>
+          <PowerButton onClick={handlePowerButton}>
+            ⏻
+          </PowerButton>
+          <ConsoleLights>
+            <Light color="#FF5252" />
+            <Light color="#FFEB3B" />
+            <Light color="#4CAF50" />
+          </ConsoleLights>
+          <SoundButton onClick={handleSoundButton}>
+            {isSoundOn ? '🔊' : '🔇'}
+          </SoundButton>
+        </ConsoleTopBar>
         
         <ConsoleScreen>
           {renderScreen()}
