@@ -98,7 +98,7 @@ const photoData = [
   { 
     id: 1, 
     imageUrl: 'https://images.unsplash.com/photo-1501913752344-988a58aa3426?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max',
-    caption: 'Our first vacation together ❤️'
+    caption: 'This is my first time to see you'
   },
   { 
     id: 2, 

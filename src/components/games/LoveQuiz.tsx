@@ -113,33 +113,33 @@ const HeartIcon = styled.span`
 const questions: Question[] = [
   {
     id: 1,
-    text: "What's our anniversary date?",
-    options: ["January 15", "February 14", "March 20", "April 10"],
-    answer: 1  // The correct answer is February 14 (index 1)
+    text: "When did we officially become a couple?",
+    options: ["April 29", "May 6", "May 10", "April 25"],
+    answer: 1  // May 6
   },
   {
     id: 2,
-    text: "What's my favorite food?",
-    options: ["Pizza", "Sushi", "Pasta", "Ice Cream"],
-    answer: 2  // The correct answer is Pasta (index 2)
+    text: "When did we meet for the first time?",
+    options: ["April 14", "April 10", "April 18", "April 12"],
+    answer: 0  // April 14
   },
   {
     id: 3,
-    text: "Where did we first meet?",
-    options: ["At school", "At a party", "At a coffee shop", "Through friends"],
-    answer: 0  // The correct answer is At school (index 0)
+    text: "When did I confess my feelings to you?",
+    options: ["April 18", "April 25", "April 20", "April 15"],
+    answer: 2  // April 20
   },
   {
     id: 4,
-    text: "What's my favorite color?",
-    options: ["Blue", "Red", "Purple", "Green"],
-    answer: 2  // The correct answer is Purple (index 2)
+    text: "When did you confess your feelings to me?",
+    options: ["April 22", "April 21", "April 25", "April 23"],
+    answer: 3  // April 23
   },
   {
     id: 5,
-    text: "What pet would I love to have?",
-    options: ["Dog", "Cat", "Bird", "Fish"],
-    answer: 1  // The correct answer is Cat (index 1)
+    text: "When did we set our first couple profile pictures?",
+    options: ["April 16", "April 20", "April 15", "April 18"],
+    answer: 2  // April 15
   }
 ];
 
